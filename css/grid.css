@@ -1,0 +1,31 @@
+/*
+using code from flexbox example in Lecture by Helmine Serban, retrieved from canvas.sfu.ca
+and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+}
+
+
+.grow-1 {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+
+  display: inline-block;
+}
